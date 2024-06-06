@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d3ccae7-060c-4ee5-977f-faaf6938a3c2" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/CashPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/CreditCardPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/DiscountStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/FixedAmountDiscount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/PaymentMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/PaymentMethodFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/PercentageDiscount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pppprojectakhir/main.fxml" afterDir="false" />
+    <list default="true" id="4d3ccae7-060c-4ee5-977f-faaf6938a3c2" name="Changes" comment="implemented basic POS task">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pppprojectakhir/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pppprojectakhir/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pppprojectakhir/main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,12 +76,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717645951744</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implemented basic POS task">
+      <option name="closed" value="true" />
+      <created>1717650397405</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717650397405</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="implemented basic POS task" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented basic POS task" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

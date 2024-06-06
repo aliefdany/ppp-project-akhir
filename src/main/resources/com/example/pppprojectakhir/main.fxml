@@ -18,16 +18,6 @@
         <ComboBox fx:id="itemComboBox">
             <items>
                 <FXCollections fx:factory="observableArrayList">
-                    <String fx:value="Nasi Uduk"/>
-                    <String fx:value="Nasi Ayam Bakar"/>
-                    <String fx:value="Nasi Rawon"/>
-                    <String fx:value="Soto Ayam"/>
-                    <String fx:value="Soto Babat"/>
-                    <String fx:value="Nasi goreng"/>
-                    <String fx:value="Sate Ayam"/>
-                    <String fx:value="Sate Kambing"/>
-                    <String fx:value="Gule Kambing"/>
-                    <String fx:value="Nasi Campur"/>
                 </FXCollections>
             </items>
         </ComboBox>
@@ -42,9 +32,6 @@
         <ComboBox fx:id="discountComboBox">
             <items>
                 <FXCollections fx:factory="observableArrayList">
-                    <String fx:value="Tanpa Diskon"/>
-                    <String fx:value="Diskon 10%"/>
-                    <String fx:value="Diskon 5%"/>
                 </FXCollections>
             </items>
         </ComboBox>
@@ -54,7 +41,7 @@
         <padding>
             <Insets top="10" right="10" bottom="10" left="10"/>
         </padding>
-        <Button text="Bayar Langsung" onAction="#payWithCash"/>
-        <Button text="Bayar dengan Kartu Kredit" onAction="#payWithCreditCard"/>
+        <Button fx:id="payWithCashButton" text="Bayar Langsung" onAction="#payWithCash"/>
+        <Button fx:id="payWithCreditCardButton" text="Bayar dengan Kartu Kredit" onAction="#payWithCreditCard"/>
     </HBox>
 </VBox>

@@ -3,11 +3,11 @@ package com.example.pppprojectakhir.controller;
 import com.example.pppprojectakhir.model.*;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class HelloController implements Observer {
@@ -23,9 +23,17 @@ public class HelloController implements Observer {
     @FXML
     private ComboBox<String> discountComboBox;
 
+    @FXML
+    private Button payWithCashButton;
+
+    @FXML
+    private Button payWithCreditCardButton;
+
     private final Cart cart = new Cart();
 
     private final Map<String, Double> itemPrices = new HashMap<>();
+
+    private final List<String> discountOptions = Arrays.asList("Tanpa Diskon", "Diskon 10%", "Diskon 5%");
 
     @FXML
     public void initialize() {
@@ -49,6 +57,16 @@ public class HelloController implements Observer {
 
         // Set ComboBox items and listener
         itemComboBox.setItems(FXCollections.observableArrayList(itemPrices.keySet()));
+
+        // Select the first item
+        if (!itemPrices.isEmpty()) {
+            itemComboBox.getSelectionModel().select(0);
+            updateItemPrice();
+        }
+        // Initialize discount ComboBox
+        discountComboBox.setItems(FXCollections.observableArrayList(discountOptions));
+        discountComboBox.getSelectionModel().selectFirst();
+
         itemComboBox.setOnAction(e -> updateItemPrice());
     }
 
@@ -68,7 +86,12 @@ public class HelloController implements Observer {
         Item item = new Item(name, price);
         cart.addItem(item);
         itemComboBox.setValue(null);
-        itemPriceField.clear();
+
+        // Select the first item
+        if (!itemPrices.isEmpty()) {
+            itemComboBox.getSelectionModel().select(0);
+            updateItemPrice();
+        }
     }
 
     @FXML
@@ -102,11 +125,20 @@ public class HelloController implements Observer {
 
     private void processPayment(String paymentType) {
         double totalAmount = cart.getTotalPrice();
-        PaymentMethod paymentMethod = PaymentMethodFactory.createPaymentMethod(paymentType);
-        paymentMethod.pay(totalAmount);
-        cart.getItems().clear();
-        cart.setDiscountStrategy(null);
-        update();
+        if (totalAmount > 0) {
+            PaymentMethod paymentMethod = PaymentMethodFactory.createPaymentMethod(paymentType);
+            paymentMethod.pay(totalAmount);
+            cart.getItems().clear();
+            cart.setDiscountStrategy(null);
+            update();
+            showPaymentSuccessDialog();
+        } else {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText("Cannot process payment. Cart is empty.");
+            alert.showAndWait();
+        }
     }
 
     @Override
@@ -117,6 +149,22 @@ public class HelloController implements Observer {
         }
         if (cart.getTotalPrice() > 0) {
             cartListView.getItems().add("Total: Rp " + cart.getTotalPrice());
+            enablePaymentButtons(true);
+        } else {
+            enablePaymentButtons(false);
         }
+    }
+
+    private void enablePaymentButtons(boolean enable) {
+        payWithCashButton.setDisable(!enable);
+        payWithCreditCardButton.setDisable(!enable);
+    }
+
+    private void showPaymentSuccessDialog() {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Pembarayan Sukses");
+        alert.setHeaderText(null);
+        alert.setContentText("Pesanan telah sukses dibayar!");
+        alert.showAndWait();
     }
 }
