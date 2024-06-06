@@ -1,6 +1,12 @@
 package com.example.pppprojectakhir.controller;
 
-import com.example.pppprojectakhir.model.*;
+import com.example.pppprojectakhir.model.factory.PaymentMethod;
+import com.example.pppprojectakhir.model.factory.PaymentMethodFactory;
+import com.example.pppprojectakhir.model.observer.Cart;
+import com.example.pppprojectakhir.model.observer.Item;
+import com.example.pppprojectakhir.model.observer.Observer;
+import com.example.pppprojectakhir.model.strategy.FixedAmountDiscount;
+import com.example.pppprojectakhir.model.strategy.PercentageDiscount;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;

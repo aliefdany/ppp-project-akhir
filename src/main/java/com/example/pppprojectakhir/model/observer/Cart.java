@@ -1,4 +1,6 @@
-package com.example.pppprojectakhir.model;
+package com.example.pppprojectakhir.model.observer;
+
+import com.example.pppprojectakhir.model.strategy.DiscountStrategy;
 
 import java.util.ArrayList;
 import java.util.List;

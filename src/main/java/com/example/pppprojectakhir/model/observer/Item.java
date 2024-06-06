@@ -1,4 +1,4 @@
-package com.example.pppprojectakhir.model;
+package com.example.pppprojectakhir.model.observer;
 
 public class Item {
     private final String name;

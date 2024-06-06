@@ -1,4 +1,4 @@
-package com.example.pppprojectakhir.model;
+package com.example.pppprojectakhir.model.factory;
 
 public class PaymentMethodFactory {
     public static PaymentMethod createPaymentMethod(String type) {

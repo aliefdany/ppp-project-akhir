@@ -1,4 +1,4 @@
-package com.example.pppprojectakhir.model;
+package com.example.pppprojectakhir.model.observer;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -9,4 +9,10 @@ module com.example.pppprojectakhir {
     opens com.example.pppprojectakhir.controller to javafx.fxml;
     exports com.example.pppprojectakhir.model;
     opens com.example.pppprojectakhir.model to javafx.fxml;
+    exports com.example.pppprojectakhir.model.factory;
+    opens com.example.pppprojectakhir.model.factory to javafx.fxml;
+    exports com.example.pppprojectakhir.model.observer;
+    opens com.example.pppprojectakhir.model.observer to javafx.fxml;
+    exports com.example.pppprojectakhir.model.strategy;
+    opens com.example.pppprojectakhir.model.strategy to javafx.fxml;
 }

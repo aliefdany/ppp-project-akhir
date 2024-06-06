@@ -1,4 +1,4 @@
-package com.example.pppprojectakhir.model;
+package com.example.pppprojectakhir.model.strategy;
 
 public class FixedAmountDiscount implements DiscountStrategy {
     private final double amount;
