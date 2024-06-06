@@ -4,14 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d3ccae7-060c-4ee5-977f-faaf6938a3c2" name="Changes" comment="">
+    <list default="true" id="4d3ccae7-060c-4ee5-977f-faaf6938a3c2" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/CashPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/CreditCardPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/DiscountStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/FixedAmountDiscount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/PaymentMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/PaymentMethodFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/PercentageDiscount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/pppprojectakhir/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pppprojectakhir/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pppprojectakhir/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pppprojectakhir/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,8 +61,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true"
   }
@@ -56,6 +86,34 @@
       <option name="presentableId" value="Default" />
       <updated>1717645719423</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1717645951744</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717645951744</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/pppprojectakhir/model/Cart.java</url>
+          <line>8</line>
+          <properties class="com.example.pppprojectakhir.Cart" method="addItem">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
